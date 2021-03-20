@@ -17,7 +17,7 @@ var corsOptions = {
   origin: 'https://bjh-hop-estore.herokuapp.com'
 }
 // corsOptions
-app.use(cors(corsOptions));
+app.use(cors(corsOptions.origin));
 // Static directory
 app.use(express.static("public"));
 /////////////////////////////////
